@@ -5,14 +5,29 @@ import { IntroComponent } from "./intro/intro.component";
 import { ProjectsComponent } from "./projects/projects.component";
 import { TechnologiesComponent } from "./technologies/technologies.component";
 import { FooterComponent } from "./footer/footer.component";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, IntroComponent, ProjectsComponent, TechnologiesComponent, FooterComponent],
+  imports: [IntroComponent, ProjectsComponent, TechnologiesComponent, FooterComponent,CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+
   title = 'Portfolio';
+  introVisibility:any=true;
+  projectVisibility:any=true;
+  displayProfile() {
+    throw new Error('Method not implemented.');
+    }
+    displayProject() {
+      this.introVisibility=false;
+      this.projectVisibility=true;
+    }
+    displayall() {
+    this.introVisibility=true;
+    this.projectVisibility=true;
+    }
 }

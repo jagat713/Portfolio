@@ -2,17 +2,17 @@
     <div class="navbar">
         <ul class="navbarlinks">
             <i class="fa-solid fa-house"></i>
-            <a href="">home</a>
+            <button (click)="displayall()" >Home</button>
             <i class="fa-solid fa-code"></i>
-            <a href="">projects</a>
+            <button (click)="displayProject()">Projects</button>
             <i class="fa-brands fa-github"></i>
-            <a href="https://github.com/jagat713">GitHub</a>
+            <a href="https://github.com/jagat713" target="_blank">GitHub</a>
             <i class="fa-solid fa-user"></i>
-            <a href="">Know me</a>
+            <button (click)="displayProfile()">Know Me</button>
         </ul>
     </div>
 </div>
-<app-intro></app-intro>
-<app-projects></app-projects>
+<app-intro *ngIf="introVisibility"></app-intro>
+<app-projects *ngIf="projectVisibility"></app-projects>
 <app-technologies></app-technologies>
 <app-footer></app-footer>
