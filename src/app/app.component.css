@@ -1,0 +1,33 @@
+.navbarContainer
+{
+    align-items: center;
+    width: 100%;
+    height:3rem;
+    justify-content: center;
+    display: flex;
+}
+.navbar
+{
+    width: 28rem;
+    height: 2.5rem;
+    background-color: aliceblue;
+    border-radius: 40px;
+    align-self: center;
+    border: 2px solid rgb(0,188,212);
+    transition: 1s box-shadow;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.navbar:hover{
+    /* box-shadow: 0 0 30px rgba(174, 2, 241, 0.7); */
+    box-shadow: 0 0 50px rgba(0,188,212, 10);
+}
+a{
+    margin: 11px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    align-self: center;
+    justify-content: center;
+}

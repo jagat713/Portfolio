@@ -1,0 +1,7 @@
+<div class="technology-container">
+    <h1 style="color: white;">Mostly Work on</h1>
+    <div class="technologies">
+      <img
+        *ngFor="let tech of technologies" [src]="tech.src" [alt]="tech.name" [style.width]="tech.width" />
+    </div>
+</div>

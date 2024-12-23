@@ -1,0 +1,42 @@
+.intro-container {
+    width: 95%;
+    height: auto;
+    display: flex;
+    justify-content: space-between; /* Space between the text and the image */
+    align-items: center; /* Vertically center items */
+    padding: 20px; /* Add padding for spacing */
+    gap: 20px; /* Space between text and image */
+}
+
+.intro {
+    color: white;
+    width: 60%; /* Text section takes 60% of the width */
+    background-color: black;
+    padding: 20px; /* Add some padding for better readability */
+    font-size: 18px; /* Adjust font size */
+    line-height: 1.6; /* Add line spacing */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: justify; /* Justify the text */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.intro-img-container 
+{
+    width: 30%; /* Image section takes 30% of the width */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+}
+
+.intro-img-container img 
+{
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    /* box-shadow: 0 0 10px rgba(167, 161, 161, 0.5); */
+    transition: filter 1s ease;
+}
+.intro-img-container img:hover
+{
+    filter: drop-shadow(0px 0px 5px rgba(0,188,212,5));
+}

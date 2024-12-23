@@ -1,0 +1,53 @@
+.project-container {
+    width: 95%;
+    height: auto;
+    display: flex;
+    justify-content: center; /* Center the card in the container */
+    padding: 20px;
+}
+
+.card {
+    width: 100%; /* Card takes 90% of the container's width */
+    /* background-color:rgb(37, 36, 36); */
+    display: flex; /* Flexbox for side-by-side layout */
+    align-items: center; /* Align items vertically */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    gap: 20px; /* Space between image and description */
+    transition: 1s box-shadow,1s background-color;
+}
+.card:hover
+{
+    box-shadow: 0 0px 8px rgba(0, 188, 212, 1);
+    background-color: rgb(37,36,36); 
+}
+.img-container {
+    flex: 1; /* Image container takes equal space */
+    display: flex; /* Center the image inside */
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%; /* Image fills its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Add shadow to the image */
+}
+
+.project-description {
+    flex: 2; /* Description takes twice as much space as the image */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for the description box */
+    font-family: Arial, sans-serif;
+    color: white; /* Text color */
+    line-height: 1.6; /* Improve readability */
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 0;
+}

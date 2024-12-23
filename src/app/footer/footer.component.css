@@ -1,0 +1,135 @@
+.footer-container {
+    width: 100%;
+    background-color: #2c2c2c;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+  
+  .footer {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  /* .resume {
+    text-align: center;
+  }
+  
+  .resume-button {
+    border-radius: 25px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease,;
+  }
+  
+  .resume-button:hover {
+    background-color: #fff;
+    color: #2c2c2c;
+  } */
+  .resume-button {
+    border-radius: 25px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.4s ease;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    background-image: linear-gradient(to right, #2c2c2c, #2c2c2c),
+      linear-gradient(to right, #fff, #fff);
+  }
+  
+  .resume-button:hover {
+    border: 2px solid transparent;
+    color: #00bcd4;
+    background-image: linear-gradient(to right, #2c2c2c, #2c2c2c),
+      linear-gradient(to right, #00bcd4, #2c2c2c);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+  
+  
+  
+  .tagline h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .decorative-line {
+    width: 80%;
+    height: 2px;
+    background: #fff;
+    margin: 0.5rem 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .decorative-line::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #00bcd4, #2c2c2c);
+    animation: slide-animation 3s infinite;
+  }
+  
+  @keyframes slide-animation {
+    0% {
+      left: -100%;
+    }
+    50% {
+      left: 0%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  
+  .socialaccounts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .social-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .social-item img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-item img:hover {
+    transform: scale(1.2);
+  }
+  
+  .social-item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-item a:hover {
+    color: #00bcd4;
+  }
+  
